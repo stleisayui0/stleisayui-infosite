@@ -28,3 +28,12 @@ main {
 section {
   margin-top: 2em;
 }
+footer a:link i,
+footer a:visited i {
+  color: #0000ee;
+}
+
+footer a:hover i.fa-instagram { color: #e1306c; }
+footer a:hover i.fa-facebook { color: #3b5998; }
+footer a:hover i.fa-youtube { color: #ff0000; }
+
