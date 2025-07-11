@@ -191,7 +191,11 @@ footer a:hover i.fa-youtube {
 .form-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.form-wrapper form {
+  width: 100%;
+  max-width: 700px;
 }
 
 /* RESPONSIVE DESIGN */
