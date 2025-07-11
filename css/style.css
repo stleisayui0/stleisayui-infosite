@@ -188,6 +188,12 @@ footer a:hover i.fa-youtube {
   background-color: #aa0000;
 }
 
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 600px) {
   nav {
