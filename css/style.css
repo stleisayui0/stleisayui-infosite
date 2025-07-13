@@ -219,7 +219,9 @@ footer a:hover i.fa-youtube {
 }
 
 .carousel-track img {
+  object-fit: cover;
   width: 100%;
+  height: 500px;
   flex-shrink: 0;
 }
 
