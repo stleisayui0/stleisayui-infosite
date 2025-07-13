@@ -28,12 +28,19 @@
       <p>Experience the vibrant rhythm of Okinawan drum dance!</p>
     </section>
     </br>
-    <section id="media">
+    <section id="media-carousel">
       <h2>Watch Us Perform</h2>
-      <video controls width="100%">
-        <source src="media/performance-clip.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <div class="carousel-container">
+        <div class="carousel-track" id="carousel-track">
+          <img src="media/photo1.jpg" alt="Performance 1" />
+          <img src="media/photo2.jpg" alt="Performance 2" />
+          <img src="media/photo3.jpg" alt="Performance 3" />
+          <img src="media/photo4.jpg" alt="Performance 4" />
+          <img src="media/photo5.jpg" alt="Performance 5" />
+        </div>
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+        <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+      </div>
     </section>
     <section id="newsletter">
       <h2>Stay in Touch</h2>
@@ -51,5 +58,15 @@
   <footer>
     <iframe src="footer.html" width="100%" height="100" style="border: none;"></iframe>
   </footer>
+  <script>
+    let currentSlide = 0;
+    const track = document.getElementById("carousel-track");
+    const slides = track.children;
+  
+    function moveSlide(step) {
+      currentSlide = (currentSlide + step + slides.length) % slides.length;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+  </script>
 </body>
 </html>
