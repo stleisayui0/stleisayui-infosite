@@ -15,7 +15,7 @@ body {
 
 /* === NAVBAR === */
 header {
-  background: #1a1a1a;
+  background: url('media/header-bg.jpg') center/cover no-repeat;
   color: white;
   padding: 1.2em 2em;
   text-align: center;
