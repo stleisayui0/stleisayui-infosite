@@ -16,8 +16,8 @@ body {
 /* === NAVBAR === */
 header {
   background-image: url('../media/ant-rozetsky-q-DJ9XhKkhA-unsplash.jpg');
-  background-size: 200% auto;
-  background-position: center;
+  background-size: cover;
+  background-position: center 65%;
   background-repeat: no-repeat;
   /*background: #1a1a1a;*/
   /*min-height: 300px;*/
