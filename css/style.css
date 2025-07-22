@@ -15,11 +15,16 @@ body {
 
 /* === NAVBAR === */
 header {
-  background-image: url('media/ant-rozetsky-q-DJ9XhKkhA-unsplash.jpg') center/cover no-repeat;
+  background-image: url('../media/ant-rozetsky-q-DJ9XhKkhA-unsplash.jpg');
+  background-size: 200% auto;
+  background-position: center;
+  background-repeat: no-repeat;
   /*background: #1a1a1a;*/
+  /*min-height: 300px;*/
   color: white;
   padding: 1.2em 2em;
   text-align: center;
+  
 }
 
 .footer-icons {
