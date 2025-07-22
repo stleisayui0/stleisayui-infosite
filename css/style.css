@@ -22,6 +22,14 @@ header {
   text-align: center;
 }
 
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
 nav {
   margin-top: 0.5em;
 }
