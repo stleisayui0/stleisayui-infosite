@@ -15,8 +15,8 @@ body {
 
 /* === NAVBAR === */
 header {
-  /*background: url('media/ant-rozetsky-q-DJ9XhKkhA-unsplash.jpg') center/cover no-repeat;*/
-  background: #1a1a1a;
+  background-image: url('media/ant-rozetsky-q-DJ9XhKkhA-unsplash.jpg') center/cover no-repeat;
+  /*background: #1a1a1a;*/
   color: white;
   padding: 1.2em 2em;
   text-align: center;
