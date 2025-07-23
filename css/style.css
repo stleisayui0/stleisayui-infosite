@@ -236,14 +236,16 @@ footer a:hover i.fa-youtube {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 300px;
 }
 
 .carousel-track img {
-  max-height: 500px;
+  max-height: 70vh;
   width: auto;
   height: auto;
   flex-shrink: 0;
   margin: auto;
+  object-fit: contain;
 }
 
 .carousel-btn {
@@ -287,5 +289,17 @@ footer a:hover i.fa-youtube {
 
   form {
     padding: 1em;
+  }
+
+  .carousel-container {
+    max-width: 100%;
+  }
+
+  .carousel-slide {
+    min-height: 250px;
+  }
+
+  .carousel-track img {
+    max-height: 50vh;
   }
 }
