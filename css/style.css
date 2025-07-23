@@ -278,14 +278,25 @@ footer a:hover i.fa-youtube {
 .hamburger {
   display: none;
   font-size: 2em;
-  background: none;
+  background: transparent;
   border: none;
-  color: white;
   cursor: pointer;
   position: absolute;
   top: 1em;
-  right: 1em;
+  left: 1em;
   z-index: 1001;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 25px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: black;
+  margin: 4px 0;
+  transition: 0.4s;
 }
 
 /* Navbar styles */
@@ -298,7 +309,7 @@ footer a:hover i.fa-youtube {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5em;
+  gap: 1em;
   margin: 0;
   padding: 0;
 }
@@ -312,7 +323,7 @@ footer a:hover i.fa-youtube {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: flex;
   }
 
   .nav-links {
@@ -320,8 +331,8 @@ footer a:hover i.fa-youtube {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
-    top: 100%;
-    right: 0;
+    top: 60px;
+    left: 0;
     width: 100%;
     padding: 1em 0;
     text-align: center;
@@ -336,7 +347,6 @@ footer a:hover i.fa-youtube {
     margin: 0.5em 0;
   }
 }
-
 
 
 /* RESPONSIVE DESIGN */
