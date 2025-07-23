@@ -14,12 +14,17 @@
 <body>
   <header>
     <h1>Welcome to St. Louis Okinawa Kenjinkai!</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="events.html">Events</a>
-      <a href="book.html">Book Us</a>
-      <a href="contact.html">Contact</a>
+    <button class="hamburger" aria-label="Toggle navigation">
+    &#9776;
+    </button>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="book.html">Book Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -66,11 +71,17 @@
     let currentSlide = 0;
     const track = document.getElementById("carousel-track");
     const slides = track.children;
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
   
     function moveSlide(step) {
       currentSlide = (currentSlide + step + slides.length) % slides.length;
       track.style.transform = `translateX(-${currentSlide * 100}%)`;
     }
+    
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
   </script>
 </body>
 </html>
