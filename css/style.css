@@ -274,6 +274,70 @@ footer a:hover i.fa-youtube {
   background: rgba(0, 0, 0, 0.7);
 }
 
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 1001;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5em 0;
+  }
+}
+
+
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 600px) {
