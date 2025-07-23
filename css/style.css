@@ -331,7 +331,7 @@ footer a:hover i.fa-youtube {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
-    top: 60px;
+    top: 60px; /* i think edit this to 0px to have from top*/
     left: 0;
     width: 100%;
     padding: 1em 0;
