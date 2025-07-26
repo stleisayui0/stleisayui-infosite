@@ -301,6 +301,7 @@ footer a:hover i.fa-youtube {
 
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
+  background: white;
 }
 
 .hamburger.active span:nth-child(2) {
@@ -309,6 +310,7 @@ footer a:hover i.fa-youtube {
 
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
+  background: white;
 }
 
 /* Navbar styles */
@@ -343,7 +345,7 @@ footer a:hover i.fa-youtube {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
-    top: 0px; /* i think edit this to 0px to have from top ?! (edited to 0)*/
+    top: 0px;
     left: 0;
     width: 100%;
     padding: 1em 0;
