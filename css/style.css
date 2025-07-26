@@ -302,6 +302,7 @@ footer a:hover i.fa-youtube {
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
   background: white;
+  width: 105%;
 }
 
 .hamburger.active span:nth-child(2) {
@@ -311,6 +312,7 @@ footer a:hover i.fa-youtube {
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
   background: white;
+  width: 105%;
 }
 
 /* Navbar styles */
