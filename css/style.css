@@ -390,7 +390,7 @@ footer a:hover i.fa-youtube {
     padding: 1em;
   }
 
-  .carousel-container {
+/*   .carousel-container {
     max-width: 100%;
     overflow-x: hidden;
   }
@@ -412,6 +412,6 @@ footer a:hover i.fa-youtube {
     flex-shrink: 0;
     margin: auto;
     object-fit: contain;
-  }
+  } */
   
 }
