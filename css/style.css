@@ -233,6 +233,9 @@ footer a:hover i.fa-youtube {
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .carousel-slide {
@@ -245,10 +248,10 @@ footer a:hover i.fa-youtube {
 
 .carousel-track img {
   max-height: 70vh;
+  max-width: 100%;
   width: auto;
   height: auto;
-  flex-shrink: 0;
-  margin: auto;
+  display: block;
   object-fit: contain;
 }
 
@@ -394,7 +397,8 @@ footer a:hover i.fa-youtube {
 
   .carousel-slide {
     min-height: 250px;
-    min-width: 100%;
+    width: 100vw;
+    box-sizing: border-box;
     flex: 0 0 100%;
     display: flex;
     justify-content: center;
