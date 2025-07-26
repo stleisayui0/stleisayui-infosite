@@ -387,10 +387,15 @@ footer a:hover i.fa-youtube {
 
   .carousel-container {
     max-width: 100%;
+    overflow-x: hidden;
   }
 
   .carousel-slide {
     min-height: 250px;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .carousel-track img {
