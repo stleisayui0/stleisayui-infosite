@@ -84,6 +84,14 @@
   </footer>
 
   <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      hamburger.classList.toggle('active');
+    });
+    
     const form = document.getElementById('booking-form');
     form.addEventListener('submit', function(e) {
       alert('Thank you for your request! We will get back to you soon.');
