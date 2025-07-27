@@ -245,6 +245,13 @@ footer a:hover i.fa-youtube {
   margin: auto;
   object-fit: contain;
 }
+/* this addition?! */
+.carousel-slide img {
+  max-height: 70vh;
+  width: auto;
+  object-fit: contain;
+  margin: auto;
+}
 
 .carousel-btn {
   position: absolute;
