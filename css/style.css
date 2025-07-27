@@ -19,8 +19,6 @@ header {
   background-size: cover;
   background-position: center 62%;
   background-repeat: no-repeat;
-  /*background: #1a1a1a;*/
-  /*min-height: 300px;*/
   color: white;
   padding: 1.2em 2em;
   text-align: center;
@@ -385,27 +383,13 @@ footer a:hover i.fa-youtube {
     padding: 1em;
   }
 
-/*   .carousel-container {
+  .carousel-container {
     max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .carousel-slide {
-    min-height: 250px;
-    min-width: 100%;
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .carousel-track img {
-    max-height: 50vh;
+    max-height: 70vh;
     width: auto;
-    height: auto;
-    flex-shrink: 0;
-    margin: auto;
-    object-fit: contain;
-  } */
+  }
   
 }
