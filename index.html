@@ -10,6 +10,8 @@
   <title>Okinawan Eisa Performance Group</title>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="icon" type="image/png" href="media/（３）ロゴデザイン_全体.png" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 </head>
 <body>
   <header>
@@ -69,21 +71,10 @@
   <footer>
     <iframe src="footer.html" width="100%" height="100" style="border: none;"></iframe>
   </footer>
-  <script>
-    let currentSlide = 0;
-    const track = document.getElementById("carousel-track");
-    const slides = track.children;
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-  
-    function moveSlide(step) {
-      currentSlide = (currentSlide + step + slides.length) % slides.length;
-      track.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-    
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-  </script>
+  <script src="scripts/main.js"></script>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>
 </html>
