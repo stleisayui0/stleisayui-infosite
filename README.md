@@ -1,7 +1,7 @@
 # STL Eisa Yui <br/>
-## Installed NPM, Bootstrap, and jQuery (Bootstrap needs jQuery). Check out the node_modules. <br/>
-If you're using VS Code pull up a terminal and install NPM but I think you can download npm for windows here: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm <br/>
-I am using Ubuntu WSL with Vistual Studio Code which lets me use the terminal like I would in linux so I just use this command to install npm <br/>
+## Installed NPM, Bootstrap, and jQuery (Bootstrap needs jQuery).<br/>
+If you're using VS Code pull up a terminal and install NPM but I think you can download npm for windows here: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm<br/>
+I am using Ubuntu WSL with Vistual Studio Code which lets me use the terminal like I would in linux so I just use this command to install npm<br/>
 ```
 sudo apt install npm 
 ```
