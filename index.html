@@ -10,6 +10,8 @@
   <title>St. Louis Eisa Yui</title>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="icon" type="image/png" href="media/（３）ロゴデザイン_全体.png" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 </head>
 <body>
   <header>
@@ -69,51 +71,6 @@
   <footer>
     <iframe src="footer.html" width="100%" height="100" style="border: none;"></iframe>
   </footer>
-  <script>
-    let currentSlide = 0;
-    const track = document.getElementById("carousel-track");
-    const slides = track.children;
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    let startX = 0;
-    let isSwiping = false;
-  
-    function moveSlide(step) {
-      currentSlide = (currentSlide + step + slides.length) % slides.length;
-      track.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-
-    track.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
-      isSwiping = true;
-    });
-    
-    track.addEventListener('touchmove', (e) => {
-      if (!isSwiping) return;
-      const moveX = e.touches[0].clientX;
-      const diff = startX - moveX;
-    
-      // Swipe left
-      if (diff > 50) {
-        nextBtn.click();
-        isSwiping = false;
-      }
-    
-      // Swipe right
-      if (diff < -50) {
-        prevBtn.click();
-        isSwiping = false;
-      }
-    });
-    
-    track.addEventListener('touchend', () => {
-      isSwiping = false;
-    });
-    
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-      hamburger.classList.toggle('active');
-    });
-  </script>
+  <script src='scripts/main.js'></script>
 </body>
 </html>
