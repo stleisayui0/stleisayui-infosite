@@ -47,9 +47,9 @@
       hamburger.classList.toggle('active');
     });
 
-    document.getElementById("hamburger").addEventListener("click", function () {
-      document.getElementById("nav-menu").classList.toggle("show");
-    });
+    //document.getElementById("hamburger").addEventListener("click", function () {
+      //document.getElementById("nav-menu").classList.toggle("show");
+    //});
 
     //booking
     const form = document.getElementById('booking-form');
