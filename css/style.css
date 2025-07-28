@@ -19,8 +19,6 @@ header {
   background-size: cover;
   background-position: center 62%;
   background-repeat: no-repeat;
-  /*background: #1a1a1a;*/
-  /*min-height: 300px;*/
   color: white;
   padding: 1.2em 2em;
   text-align: center;
@@ -247,6 +245,13 @@ footer a:hover i.fa-youtube {
   margin: auto;
   object-fit: contain;
 }
+/* this addition?! */
+.carousel-slide img {
+  max-height: 70vh;
+  width: auto;
+  object-fit: contain;
+  margin: auto;
+}
 
 .carousel-btn {
   position: absolute;
@@ -296,7 +301,23 @@ footer a:hover i.fa-youtube {
   width: 100%;
   background: black;
   margin: 4px 0;
-  transition: 0.4s;
+  transition: 0.4s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background: white;
+  width: 39px;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  background: white;
+  width: 39px;
 }
 
 /* Navbar styles */
@@ -331,16 +352,20 @@ footer a:hover i.fa-youtube {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
-    top: 60px; /* i think edit this to 0px to have from top*/
+    top: 0px;
     left: 0;
     width: 100%;
     padding: 1em 0;
     text-align: center;
     z-index: 1000;
+    transition: max-height 0.4s ease;
+    overflow: hidden;
+    max-height: 0;
   }
 
   .nav-links.show {
     display: flex;
+    max-height: 500px;
   }
 
   .nav-links li {
@@ -369,11 +394,9 @@ footer a:hover i.fa-youtube {
     max-width: 100%;
   }
 
-  .carousel-slide {
-    min-height: 250px;
-  }
-
   .carousel-track img {
-    max-height: 50vh;
+    max-height: 70vh;
+    width: auto;
   }
+  
 }
