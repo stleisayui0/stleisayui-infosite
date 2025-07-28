@@ -8,10 +8,10 @@
   <meta name="keywords" content="Eisa, Okinawa, taiko, cultural performance, St. Louis, Japanese drumming, dance group, book Eisa group" />
   <meta name="author" content="St. Louis Okinawa Eisa Yui" />
   <title>St. Louis Eisa Yui</title>
-  <link rel="stylesheet" href="css/style.css"/>
   <link rel="icon" type="image/png" href="media/（３）ロゴデザイン_全体.png" />
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
   <header>
@@ -40,19 +40,41 @@
     </br>
     <section id="media-carousel">
       <h2>Watch Us Perform</h2>
-      <div class="carousel-container">
-        <div class="carousel-track" id="carousel-track">
-          <div class="carousel-slide"><img src="media/D80_9368-154.JPEG" alt="Performance 1" /></div>
-          <div class="carousel-slide"><img src="media/D80_9656-264.JPEG" alt="Performance 2" /></div>
-          <div class="carousel-slide"><img src="media/P1120507_Original.jpg" alt="Performance 3" /></div>
-          <div class="carousel-slide"><img src="media/P1120463_Original.jpg" alt="Performance 4" /></div>
-          <div class="carousel-slide"><img src="media/IMG_8952.jpeg" alt="Performance 5" /></div>
-          <div class="carousel-slide"><img src="media/IMG_8957.JPG" alt="Performance 6" /></div>
-          <div class="carousel-slide"><img src="media/P1120574_Original.jpg" alt="Performance 7" /></div>
-          <div class="carousel-slide"><img src="media/IMG_5640.JPG" alt="Performance 8" /></div>
+      <div id="eisaCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="media/D80_9368-154.JPEG" class="d-block w-100" alt="Performance 1">
+          </div>
+          <div class="carousel-item">
+            <img src="media/D80_9656-264.JPEG" alt="Performance 2" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="media/P1120507_Original.jpg" alt="Performance 3" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="media/P1120463_Original.jpg" alt="Performance 4" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="media/IMG_8952.jpeg" alt="Performance 5" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="media/IMG_8957.JPG" alt="Performance 6" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="media/P1120574_Original.jpg" alt="Performance 7" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="media/IMG_5640.JPG" alt="Performance 8" class="d-block w-100">
+          </div>
         </div>
-        <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
-        <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#eisaCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#eisaCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
     <section id="newsletter">
@@ -71,6 +93,7 @@
   <footer>
     <iframe src="footer.html" width="100%" height="100" style="border: none;"></iframe>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   <script src='scripts/main.js'></script>
 </body>
 </html>
