@@ -373,6 +373,25 @@ footer a:hover i.fa-youtube {
   }
 }
 
+.calendar-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* Adjust the height ratio as needed (75% = 4:3 ratio) */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  margin-top: 1em;
+}
+
+.calendar-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 600px) {
