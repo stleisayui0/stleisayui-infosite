@@ -1,7 +1,7 @@
 {
   "name": "stleisayui-infosite",
   "version": "1.0.0",
-  "description": "",
+  "description": "If you're using VS Code pull up a terminal and install NPM but I think you can download npm for windows here: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm<br/>\r I am using Ubuntu WSL with Vistual Studio Code which lets me use the terminal like I would in linux so I just use this command to install npm<br/>\r ```\r sudo apt install npm \r ```\r Then after you have npm installed in the terminal run this command<br/>\r ```\r npm install \r ```\r That will install all of the dependencies.<br/>\r Docs for bootstrap and jQuery check out the examples<br/>\r https://getbootstrap.com/docs/3.4/getting-started/<br/>\r https://learn.jquery.com/<br/>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
